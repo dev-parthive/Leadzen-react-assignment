@@ -7,6 +7,8 @@ const navbar = () => {
     const menuItems = <>
     <li><Link to="/">Home</Link></li>
     <li><Link to="/blog">Blog</Link></li>
+    <li><Link to="/register">Register</Link></li>
+    <li><Link to="/login">Login</Link></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -19,7 +21,7 @@ const navbar = () => {
        {menuItems}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl text-orange-600 font-bold">Leadzen</a>
+    <Link to="/" className="btn btn-ghost normal-case text-xl text-orange-600 font-bold">Leadzen</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
